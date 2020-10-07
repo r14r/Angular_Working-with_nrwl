@@ -1,0 +1,10 @@
+npm -g install @nrwl/schematics
+npm -g install @angular/cli
+npm -g install @nrwl/cli
+npx create-nx-workspace workspace
+
+cd workspace
+
+ng serve angular-nest --port 5000
+ng add    @nrwl/angular --defaults
+ng g      @nrwl/angular:application todos
